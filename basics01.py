@@ -19,3 +19,9 @@ num = input("Enter a number")  #prompt message will be displayed on terminal
 default mode of input is string
 '''
 type(num) #string
+
+#type casting
+count = int( input("Enter a number") )
+
+type(count) #int
+
