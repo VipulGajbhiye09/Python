@@ -25,3 +25,17 @@ count = int( input("Enter a number") )
 
 type(count) #int
 
+'''
+Logical operators
+1) and   2) or  3) not
+'''
+
+if ____ and ____ and ____ :
+  #logic here
+  
+''' in "and" will stop and EXIT on 1st FALSE '''
+
+if ____ or ____ or ____ :
+  #logic here
+  
+''' in "or" will stop on 1st TRUE and ENTER '''  
