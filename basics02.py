@@ -28,3 +28,9 @@ Interview Question
 1)  Divide a num to its half without division operator?
 => Right Shift by 1 ie n>>1 
 
+2) Swap 2 variables using bitwise operator?
+
+=> It takes 3 steps
+    a = a ^ b
+    b = a ^ b
+    a = a ^ b
