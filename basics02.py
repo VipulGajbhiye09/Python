@@ -16,7 +16,15 @@ Bitwise operators
   a >> n = a // (2^n)
   
    E.g.) 100 >> 2 gives 25
+   
+ 4) & [AND GATE]
+ 
+ 5) | [OR GATE]
+ 
+ 6) ^ [XOR GATE]
+ 
 '''
 Interview Question
-- Divide a num to its half without division operator?
+1)  Divide a num to its half without division operator?
 => Right Shift by 1 ie n>>1 
+
