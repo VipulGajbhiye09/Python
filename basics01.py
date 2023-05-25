@@ -39,3 +39,9 @@ if ____ or ____ or ____ :
   #logic here
   
 ''' in "or" will stop on 1st TRUE and ENTER '''  
+
+Loops : n instructions to be repeated in a fixed sequence till a condition is true
+-for loop 
+ for i in range (start, end, step)
+  
+ eg) for i in range (1,5,1)  => 1,2,3,4
