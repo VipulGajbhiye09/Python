@@ -44,4 +44,13 @@ Loops : n instructions to be repeated in a fixed sequence till a condition is tr
 -for loop 
  for i in range (start, end, step)
   
- eg) for i in range (1,5,1)  => 1,2,3,4
+ eg) for i in range (1,5,1)
+        print(i)
+   => 1,2,3,4
+    
+ eg) for i in range (1,5,1)
+        print(i)   
+     print("out of loop i" , i)
+    
+   => 1,2,3,4
+      out of loop 4
