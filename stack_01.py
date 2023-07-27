@@ -16,3 +16,18 @@ class StackExample:
         temp=self.stack[self.tos]
         self.tos-=1
         return(temp)
+        
+    def isfull(self):
+        if self.tos==self.Maxsize-1:
+            return True
+        else:
+            return False
+
+    def isempty(self):
+        if self.tos==-1:
+            return True
+        else:
+            return False
+            
+    def peek(self):
+        return self.stack[self.tos]            
