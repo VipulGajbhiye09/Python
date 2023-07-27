@@ -30,4 +30,8 @@ class StackExample:
             return False
             
     def peek(self):
-        return self.stack[self.tos]            
+        return self.stack[self.tos]     
+        
+    def printstack(self):
+        for i in range(self.tos,-1,-1):# tos to zero
+            print(self.stack[i])
