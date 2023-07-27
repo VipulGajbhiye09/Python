@@ -12,3 +12,7 @@ class StackExample:
         self.stack[self.tos]=e
         print(e,"pushed in stack")
 
+    def pop(self):
+        temp=self.stack[self.tos]
+        self.tos-=1
+        return(temp)
