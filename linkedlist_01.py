@@ -23,3 +23,25 @@ class LinkedList:
             t=self.root  #1
             self.root=self.root.next  #2
             print(t.data,"deleted")
+            
+    def insert_right(self,data):
+        n=Node(data)
+        if self.root==None:
+            self.root=n
+        else:
+            t=self.root  #1
+            while t.next!=None:  #2
+                t=t.next
+            t.next=n  #3
+        print(data,"inserted")
+
+    def delete_right(self):
+        if self.root==None:
+            print("List Empty")
+        else:
+            t=t2=self.root  #1
+            while t.next!=None:  #2
+                t2=t
+                t=t.next
+            t2.next=None
+            print(t.data,"deleted")
