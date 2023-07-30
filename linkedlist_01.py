@@ -45,3 +45,12 @@ class LinkedList:
                 t=t.next
             t2.next=None
             print(t.data,"deleted")
+            
+    def print_list(self):
+        if self.root==None:
+            print("Empty List")
+        else:
+            t=self.root
+            while t!=None:
+                print(t.data,end="-->")
+                t=t.next
