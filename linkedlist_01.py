@@ -66,3 +66,22 @@ class LinkedList:
                 print(key,"not found")
             else:
                 print(key,"Found")
+                
+    def delete_key(self,key):
+        if self.root==None:
+            print("Empty List")
+        else:
+            t=t2=self.root
+            while t!=None and t.data!=key:
+                t2=t
+                t=t.next
+            if t==None:
+                print(key,"not found")
+            else:
+                if t==self.root:#case 1
+                    self.root=self.root.next
+                elif t.next==None:#case 2
+                    t2.next=None
+                else:#case 3
+                    t2.next=t.next
+                print(t.data,"deleted")
