@@ -54,3 +54,15 @@ class LinkedList:
             while t!=None:
                 print(t.data,end="-->")
                 t=t.next
+                
+    def search_list(self,key):
+        if self.root==None:
+            print("Empty List")
+        else:
+            t=self.root
+            while t!=None and t.data!=key:
+                t=t.next
+            if t==None:
+                print(key,"not found")
+            else:
+                print(key,"Found")
