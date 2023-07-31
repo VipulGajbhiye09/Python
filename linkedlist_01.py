@@ -78,10 +78,28 @@ class LinkedList:
             if t==None:
                 print(key,"not found")
             else:
-                if t==self.root:#case 1
+                if t==self.root:    #case 1
                     self.root=self.root.next
-                elif t.next==None:#case 2
+                elif t.next==None:  #case 2
                     t2.next=None
-                else:#case 3
+                else:               #case 3
                     t2.next=t.next
                 print(t.data,"deleted")
+
+    def insert_at(self,pos,data):
+        n=Node(data)
+        if self.root==None:
+            self.root=n
+        else:
+            t=t2=self.root   #1
+            if pos==0:
+                n.next=self.root
+                self.root=n
+
+            while pos>0 and t.next!=None:   #2
+                t2=t
+                t=t.next
+                pos-=1
+            t2.next=n
+            n.next=t
+            print(data,"inserted")
