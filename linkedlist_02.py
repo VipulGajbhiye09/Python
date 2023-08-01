@@ -26,3 +26,14 @@ class CircularLinkedList:
                 self.root=self.root.next  #2
                 self.last.next=self.root  #3
             print(t.data,"deleted")
+            
+    def insert_right(self,data):
+        n=Node(data)  #Node Creation
+        if self.root==None:
+            self.root=self.last=n
+            self.last.next=self.root
+        else:
+            self.last.next=n  #1
+            self.last=n  #2
+            self.last.next=self.root  #3
+        print(data,"inserted")
