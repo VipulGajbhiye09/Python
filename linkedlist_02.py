@@ -63,3 +63,29 @@ class CircularLinkedList:
                 t=t.next
                 if t==self.root:
                     break
+                    
+## Menu Driven Code
+obj=CircularLinkedList()
+obj.createList()
+while True:
+    ch=int(input("1.Insert Left\n2.Delete Left\n3.Insert Right\n4.Delete Right\n5.PrintList\n0.Exit\n:"))
+    if ch==1:
+        obj.insert_left(int(input("Enter the element to add at left : ")))
+    elif ch==2:
+        obj.delete_left()
+
+    elif ch==3:
+      obj.insert_right(int(input("Enter the element to add at right : ")))
+
+    elif ch==4:
+        obj.delete_right()
+
+    elif ch ==5:
+      obj.print_list()
+
+    elif ch == 0:
+      print("Thanks")
+      break
+        
+    else:
+        print("Wrong option selected")
