@@ -20,3 +20,15 @@ class DoublyLinkedList:
             self.root=self.root.right  #2
             self.root.left=None#3
             print(t.data,"deleted")
+
+    def insert_right(self,data):
+        n=Node(data)
+        if self.root==None:
+            self.root=n
+        else:
+            t=self.root#1
+            while t.right!=None:#2
+                t=t.right
+            t.right=n
+            n.left=t
+        print(data,"inserted")
