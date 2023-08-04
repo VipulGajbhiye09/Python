@@ -26,9 +26,20 @@ class DoublyLinkedList:
         if self.root==None:
             self.root=n
         else:
-            t=self.root#1
-            while t.right!=None:#2
+            t=self.root  #1
+            while t.right!=None:  #2
                 t=t.right
             t.right=n
             n.left=t
         print(data,"inserted")
+        
+ def delete_right(self):
+        if self.root==None:
+            print("List Empty")
+        else:
+            t=self.root  #1
+            while t.right!=None:  #2
+                t=t.right
+            t2=t.left#3
+            t2.right=None#4
+            print(t.data,"deleted")
