@@ -43,3 +43,12 @@ class DoublyLinkedList:
             t2=t.left#3
             t2.right=None#4
             print(t.data,"deleted")
+
+def print_list(self):
+        if self.root==None:
+            print("Empty List")
+        else:
+            t=self.root
+            while t!=None:
+                print(t.data,end="-->")
+                t=t.right
