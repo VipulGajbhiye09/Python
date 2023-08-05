@@ -26,3 +26,13 @@ class StackExample:
             print("Empty Stack")
         else:
              print(self.tos.data,"element at peek")
+
+    def print_stack(self):
+        if self.tos==None:
+            print("Empty Stack")
+        else:
+            print("Stack has")
+            t=self.tos
+            while t!=None:
+                print(t.data)
+                t=t.next
