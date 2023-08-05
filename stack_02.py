@@ -12,3 +12,17 @@ class StackExample:
             n.next=self.tos#1
             self.tos=n#2
         print(data,"Pushed")
+
+    def pop(self):
+        if self.tos==None:
+            print("Empty Stack")
+        else:
+            t=self.tos#1
+            self.tos=self.tos.next#2
+            print(t.data,"poped")
+
+    def peek(self):
+        if self.tos==None:
+            print("Empty Stack")
+        else:
+             print(self.tos.data,"element at peek")
