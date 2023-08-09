@@ -21,4 +21,12 @@ class QueueExample:
             self.front=self.front.next  #2
             print(t.data,"dequeued")
 
-    
+    def print_queue(self):
+        if self.front==None:
+            print("Empty Queue")
+        else:
+            print("Queue Has")
+            t=self.front
+            while t!=None:
+                print(t.data,end="--")
+                t=t.next
