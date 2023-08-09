@@ -30,3 +30,20 @@ class QueueExample:
             while t!=None:
                 print(t.data,end="--")
                 t=t.next
+                
+##Menu Driven Code
+obj=QueueExample()
+obj.createqueue()
+while True:
+    ch=int(input("\n1.Enqueue\n2.Dequeue\n3.Print\n0.Exit\n:"))
+    if ch==1:
+        obj.enqueue(int(input("Enter the element:")))
+    elif ch==2:
+        obj.dequeue()
+    elif ch==3:
+        obj.print_queue()
+    elif ch == 0:
+      print("Thanks")
+      break
+    else:
+        print("Wrong option selected")
