@@ -7,7 +7,7 @@ class Human:
     def intro(self):
         print(f"Hi I'm a {self.gender} named {self.name}")
 
-obj = Human()  ##object
+obj = Human()  ##object created
 obj.birth()
 obj.intro()
 
@@ -20,3 +20,6 @@ class Human:
         self.gender=gender
         self.name=name
         print(f"Hi I'm a {self.gender} named {self.name}")
+
+obj2 = Human()  ##object created
+## Constructor will be invoked here
