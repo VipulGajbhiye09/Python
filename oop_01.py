@@ -21,9 +21,16 @@ obj.intro()
 ##Constructor is a special method that is automatically invoked when object of that class is created
 ##Constructor is used to initialize an object
 
+# Default constructor
+class Human:
+    def __init__(self):  
+        print("Object of class Human initialized")
+
+obj1 = Human()
+
 # Parameterized constructor
 class Human:
-    def __init__(self,name,gender):  ##Constructor
+    def __init__(self,name,gender):  
         print("init called:")
         self.gender=gender
         self.name=name
