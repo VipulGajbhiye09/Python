@@ -1,7 +1,12 @@
 # Classes and objects
 
+# Class is a blueprint/template for creating objects.
+# It defines properties and methods that an objecct of that class will have.
+
+# object is an instance of the class
+
 class Human:
-    def birth(self):
+    def birth(self):   
         self.gender=input("Enter gender:")
         self.name=input("Enter name:")
     def intro(self):
